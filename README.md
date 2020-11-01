@@ -1,2 +1,1 @@
-# E-commerce-website
-E-commerce Website with HTML,CSS,JQUERY 
+# dealsbro.github.io
