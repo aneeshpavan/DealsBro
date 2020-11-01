@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Sell - DealsBro</title>
+    <script src="javascript.js"></script>
+
+</head>
+<body>
+    <div class="header1">
+        <div class="header-logo">
+            <a href="firstpage.html">
+            <img src="Logo.jpg" style="height:50px; padding: 7px;">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="firstpage.html"><i class="fa fa-home"></i> Home</a></li>
+                <li><a href="contact.html"><i class="fa fa-phone"></i>  Contact</a></li>
+              <li><a href="buy.html">Switch to <img src="97957d0feb73aed802d7879cd9306eb6.png" style="height: 40px; margin-bottom: -15px;"></a></li>
+              
+            </ul>
+          </nav>
+    </div>
+		<div class="sellalign">
+			<h2 class="head"><i class="fa fa-plus-circle"></i> Post an Ad</h2>
+			<div class="post-ad-form">
+                <form onsubmit="return sellsubmit()">
+					<label>Select Category : </label>
+					<select class="">
+					  <option>Select Category</option>
+					  <option>Mobiles</option>
+					  <option>Cars</option>
+					  <option>Bikes</option>
+					  <option>Furnitures</option>
+					  <option>Pets</option>
+					</select>
+                    <br>
+                    <label>Your Name <span>*</span></label>
+                    <input type="text" class="name" placeholder="Mention the key features of your item (e.g. brand, model, age, type)" required>
+                    <label>Your Mobile <span>*</span></label>
+                    <input type="text" class="name" placeholder="" required>
+                    <label>Your Email ID <span>*</span></label>
+                    <input type="text" class="name" placeholder="" required>
+                    <label>Ad Title <span>*</span></label>
+                    <input type="text" class="name" placeholder="" required>
+					<label>Ad Description <span>*</span></label>
+					<textarea class="mess" required placeholder="Write few lines about your product"></textarea>
+				    <div class="upload-ad-photos">
+				    <label>Photos for your ad :</label>	
+					<div class="photos-upload-view">
+						<form id="upload" action="index.html" method="POST" enctype="multipart/form-data">
+						<input type="hidden" id="MAX_FILE_SIZE" name="MAX_FILE_SIZE" value="300000" />
+						<div>
+							<input type="file" id="fileselect" name="fileselect[]" multiple="multiple" />		
+						</div>
+                        </div>
+                    </div>
+                    <input type="submit"  value="Submit">		
+                </form>
+            </div>
+        </div>
+</body>
+</html>
